@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+
+
+    
+    background-color: #f0f0f0;
+}
+.container {
+    width: 99%;
+    max-width: 1200px;
+    background-color: white;
+    border: 1px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#fishList, #tipList, #locationList{
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#fishList, #locationList {
+    width: 55%;
+}
+#tipList {
+    width: 35%;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+    height: fit-content;
+}
+.fish-List-Container, .locationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+}
+.fishContainer, .location-Container {
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 10px); /* To have two items per row with 10px gap */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+#locationList{
+    margin-top: 20px;
+}
+.fishContainer{
+    max-width: 50%;
+
+}
+
+.tipcontainer{
+    height: fit-content;
+    
+}
